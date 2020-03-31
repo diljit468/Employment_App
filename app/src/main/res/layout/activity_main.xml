@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Your Name"
+                android:textAlignment="center" />
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Qualification"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/Q1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bachelor" />
+
+                <RadioButton
+                    android:id="@+id/Q2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Master" />
+
+                <RadioButton
+                    android:id="@+id/Q3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="PHD" />
+            </RadioGroup>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Language"
+                android:textAlignment="center" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <CheckBox
+                    android:id="@+id/check1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="English" />
+
+                <CheckBox
+                    android:id="@+id/check2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="French" />
+
+                <CheckBox
+                    android:id="@+id/check3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Spanish" />
+
+                <CheckBox
+                    android:id="@+id/check4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hindi" />
+
+                <CheckBox
+                    android:id="@+id/check5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Portuguese" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Experience"
+                android:textAlignment="center" />
+
+            <RadioGroup
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/E1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Expert" />
+
+                <RadioButton
+                    android:id="@+id/E2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fresh" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/yearLay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Year"
+                android:textAlignment="center" />
+
+            <EditText
+                android:id="@+id/getyear"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/okButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:text="Ok" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Salary"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/salaryText"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Amt" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
